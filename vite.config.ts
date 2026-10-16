@@ -8,6 +8,17 @@ import { playwright } from '@vitest/browser-playwright'
 
 // https://vite.dev/config/
 export default defineConfig({
+  server: {
+    host: '127.0.0.1',
+    port: 5174,
+    strictPort: true,
+    proxy: {
+      '/api': {
+        target: process.env.MAARIF_API_TARGET ?? 'http://127.0.0.1:8080',
+        changeOrigin: true,
+      },
+    },
+  },
   plugins: [
     tanstackRouter({
       target: 'react',
@@ -21,7 +32,11 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src'),
     },
   },
+  optimizeDeps: {
+    include: ['@radix-ui/react-avatar'],
+  },
   test: {
+    include: ['src/**/*.test.{ts,tsx,js,jsx}'],
     silent: 'passed-only',
     unstubEnvs: true,
     browser: {

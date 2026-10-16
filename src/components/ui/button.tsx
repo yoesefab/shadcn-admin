@@ -1,6 +1,8 @@
 import * as React from 'react'
 import { Slot } from '@radix-ui/react-slot'
 import { cva, type VariantProps } from 'class-variance-authority'
+import { motion, useReducedMotion, type HTMLMotionProps } from 'framer-motion'
+import { feedbackTransition } from '@/lib/motion'
 import { cn } from '@/lib/utils'
 
 const buttonVariants = cva(
@@ -45,6 +47,25 @@ function Button({
     asChild?: boolean
   }) {
   const Comp = asChild ? Slot : 'button'
+  const reduceMotion = useReducedMotion()
+
+  if (!asChild) {
+    return (
+      <motion.button
+        data-slot='button'
+        className={cn(buttonVariants({ variant, size, className }))}
+        whileHover={
+          reduceMotion || props.disabled ? undefined : { scale: 1.015 }
+        }
+        whileFocus={
+          reduceMotion || props.disabled ? undefined : { scale: 1.015 }
+        }
+        whileTap={reduceMotion || props.disabled ? undefined : { scale: 0.975 }}
+        transition={feedbackTransition}
+        {...(props as HTMLMotionProps<'button'>)}
+      />
+    )
+  }
 
   return (
     <Comp

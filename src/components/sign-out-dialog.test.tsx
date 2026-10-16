@@ -5,6 +5,7 @@ import { SignOutDialog } from './sign-out-dialog'
 
 const navigate = vi.fn()
 const reset = vi.fn()
+const logout = vi.fn(() => Promise.resolve())
 
 const MOCK_HREF = 'https://app.test/dashboard?tab=1'
 
@@ -12,6 +13,10 @@ vi.mock('@/stores/auth-store', () => ({
   useAuthStore: () => ({
     auth: { reset },
   }),
+}))
+
+vi.mock('@/context/session-provider', () => ({
+  useSession: () => ({ logout }),
 }))
 
 vi.mock('@tanstack/react-router', async (importOriginal) => {
@@ -33,7 +38,7 @@ describe('SignOutDialog', () => {
       <SignOutDialog open onOpenChange={vi.fn()} />
     )
 
-    await userEvent.click(getByRole('button', { name: /^Sign out$/i }))
+    await userEvent.click(getByRole('button', { name: /^Se déconnecter$/i }))
 
     expect(reset).toHaveBeenCalledOnce()
     expect(navigate).toHaveBeenCalledWith({

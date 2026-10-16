@@ -1,4 +1,5 @@
 import { createContext, useContext, useEffect, useState } from 'react'
+import type { UserRole } from '@/types/api'
 import { CommandMenu } from '@/components/command-menu'
 
 type SearchContextType = {
@@ -10,9 +11,10 @@ const SearchContext = createContext<SearchContextType | null>(null)
 
 type SearchProviderProps = {
   children: React.ReactNode
+  role?: UserRole
 }
 
-export function SearchProvider({ children }: SearchProviderProps) {
+export function SearchProvider({ children, role }: SearchProviderProps) {
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
@@ -29,7 +31,7 @@ export function SearchProvider({ children }: SearchProviderProps) {
   return (
     <SearchContext value={{ open, setOpen }}>
       {children}
-      <CommandMenu />
+      <CommandMenu role={role} />
     </SearchContext>
   )
 }

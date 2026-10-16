@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="139" failures="0" errors="0" time="134.3232">
+    <testsuite name="src/api/administration-api.test.ts" timestamp="2026-10-13T17:41:25.378Z" hostname="elitebook" tests="2" failures="0" errors="0" skipped="0" time="0.0105">
+        <testcase classname="src/api/administration-api.test.ts" name="loads every user page before handing the list to the shared table" time="0.0061">
+        </testcase>
+        <testcase classname="src/api/administration-api.test.ts" name="does not present a partial list if a later page fails" time="0.0037">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/components/config-drawer.test.tsx" timestamp="2026-10-13T17:41:25.380Z" hostname="elitebook" tests="15" failures="0" errors="0" skipped="0" time="28.5528">
+        <testcase classname="src/components/config-drawer.test.tsx" name="ConfigDrawer (integration) &gt; opens the drawer and renders the sections" time="1.2645">
+        </testcase>
+        <testcase classname="src/components/config-drawer.test.tsx" name="ConfigDrawer (integration) &gt; theme preference &gt; applies light theme to &lt;html&gt; and cookie" time="1.1714">
+        </testcase>
+        <testcase classname="src/components/config-drawer.test.tsx" name="ConfigDrawer (integration) &gt; theme preference &gt; applies dark theme to &lt;html&gt; and cookie" time="1.0368">
+        </testcase>
+        <testcase classname="src/components/config-drawer.test.tsx" name="ConfigDrawer (integration) &gt; theme preference &gt; applies system theme: stores cookie and applies a resolved light or dark class" time="0.8025">
+        </testcase>
+        <testcase classname="src/components/config-drawer.test.tsx" name="ConfigDrawer (integration) &gt; sidebar variant &gt; selecting floating updates layout_variant cookie" time="0.6623">
+        </testcase>
+        <testcase classname="src/components/config-drawer.test.tsx" name="ConfigDrawer (integration) &gt; sidebar variant &gt; selecting sidebar updates layout_variant cookie" time="0.7468">
+        </testcase>
+        <testcase classname="src/components/config-drawer.test.tsx" name="ConfigDrawer (integration) &gt; sidebar variant &gt; selecting inset updates layout_variant cookie after another variant" time="1.0822">
+        </testcase>
+        <testcase classname="src/components/config-drawer.test.tsx" name="ConfigDrawer (integration) &gt; selecting full layout sets collapsible to offcanvas and closes sidebar" time="0.9959">
+        </testcase>
+        <testcase classname="src/components/config-drawer.test.tsx" name="ConfigDrawer (integration) &gt; section reset buttons &gt; resets theme via section control after choosing dark" time="1.1119">
+        </testcase>
+        <testcase classname="src/components/config-drawer.test.tsx" name="ConfigDrawer (integration) &gt; section reset buttons &gt; resets direction via section control after choosing RTL" time="1.3099">
+        </testcase>
+        <testcase classname="src/components/config-drawer.test.tsx" name="ConfigDrawer (integration) &gt; section reset buttons &gt; resets sidebar style via section control after choosing floating" time="1.2105">
+        </testcase>
+        <testcase classname="src/components/config-drawer.test.tsx" name="ConfigDrawer (integration) &gt; section reset buttons &gt; resets layout via section control after choosing compact" time="1.3409">
+        </testcase>
+        <testcase classname="src/components/config-drawer.test.tsx" name="ConfigDrawer (integration) &gt; changes direction and applies it to &lt;html dir&gt;" time="1.0714">
+        </testcase>
+        <testcase classname="src/components/config-drawer.test.tsx" name="ConfigDrawer (integration) &gt; updates layout: selecting non-default closes sidebar and changes layout cookie" time="12.2142">
+        </testcase>
+        <testcase classname="src/components/config-drawer.test.tsx" name="ConfigDrawer (integration) &gt; reset restores defaults across sidebar/theme/layout/direction" time="2.5213">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/components/confirm-dialog.test.tsx" timestamp="2026-10-13T17:41:25.387Z" hostname="elitebook" tests="9" failures="0" errors="0" skipped="0" time="13.5997">
+        <testcase classname="src/components/confirm-dialog.test.tsx" name="ConfirmDialog &gt; renders title, description, and default buttons" time="0.0971">
+        </testcase>
+        <testcase classname="src/components/confirm-dialog.test.tsx" name="ConfirmDialog &gt; calls handleConfirm when the confirm button is clicked" time="11.9365">
+        </testcase>
+        <testcase classname="src/components/confirm-dialog.test.tsx" name="ConfirmDialog &gt; disables confirm when disabled is true" time="0.1298">
+        </testcase>
+        <testcase classname="src/components/confirm-dialog.test.tsx" name="ConfirmDialog &gt; when isLoading is true, disables cancel and confirm" time="0.0566">
+        </testcase>
+        <testcase classname="src/components/confirm-dialog.test.tsx" name="ConfirmDialog &gt; supports custom button texts" time="0.0504">
+        </testcase>
+        <testcase classname="src/components/confirm-dialog.test.tsx" name="ConfirmDialog &gt; renders confirm as submit button linked to desc form when `form` is set" time="0.0707">
+        </testcase>
+        <testcase classname="src/components/confirm-dialog.test.tsx" name="ConfirmDialog &gt; submits the desc form when confirm is clicked (form prop, no handleConfirm)" time="0.6619">
+        </testcase>
+        <testcase classname="src/components/confirm-dialog.test.tsx" name="ConfirmDialog &gt; submits the form when Enter key is pressed" time="0.5113">
+        </testcase>
+        <testcase classname="src/components/confirm-dialog.test.tsx" name="ConfirmDialog &gt; does not submit the form when confirm is disabled (typed confirmation mismatch)" time="0.0793">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/components/date-range-picker.test.tsx" timestamp="2026-10-13T17:41:25.390Z" hostname="elitebook" tests="3" failures="0" errors="0" skipped="0" time="5.632">
+        <testcase classname="src/components/date-range-picker.test.tsx" name="DateRangePicker &gt; opens a French calendar with segmented date inputs" time="1.2677">
+        </testcase>
+        <testcase classname="src/components/date-range-picker.test.tsx" name="DateRangePicker &gt; discards uncommitted edits when cancelled" time="2.4052">
+        </testcase>
+        <testcase classname="src/components/date-range-picker.test.tsx" name="DateRangePicker &gt; applies a changed range and retains it on reopening" time="1.9546">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/components/password-input.test.tsx" timestamp="2026-10-13T17:41:25.392Z" hostname="elitebook" tests="4" failures="0" errors="0" skipped="0" time="1.7928">
+        <testcase classname="src/components/password-input.test.tsx" name="PasswordInput &gt; renders the password input correctly" time="0.0306">
+        </testcase>
+        <testcase classname="src/components/password-input.test.tsx" name="PasswordInput &gt; toggles the password visibility when the show password button is clicked" time="0.6826">
+        </testcase>
+        <testcase classname="src/components/password-input.test.tsx" name="PasswordInput &gt; disables the show password button when the password input is disabled" time="0.0505">
+        </testcase>
+        <testcase classname="src/components/password-input.test.tsx" name="PasswordInput &gt; works with FormLabel and react-hook-form field spread" time="1.0248">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/components/profile-dropdown.test.tsx" timestamp="2026-10-13T17:41:25.394Z" hostname="elitebook" tests="2" failures="0" errors="0" skipped="0" time="1.6416">
+        <testcase classname="src/components/profile-dropdown.test.tsx" name="ProfileDropdown &gt; only offers the profile link and sign-out action" time="0.7857">
+        </testcase>
+        <testcase classname="src/components/profile-dropdown.test.tsx" name="ProfileDropdown &gt; opens the sign-out confirmation" time="0.8519">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/components/sign-out-dialog.test.tsx" timestamp="2026-10-13T17:41:25.395Z" hostname="elitebook" tests="2" failures="0" errors="0" skipped="0" time="0.8048">
+        <testcase classname="src/components/sign-out-dialog.test.tsx" name="SignOutDialog &gt; calls auth.reset and navigates to sign-in with current location as redirect" time="0.4612">
+        </testcase>
+        <testcase classname="src/components/sign-out-dialog.test.tsx" name="SignOutDialog &gt; does not call reset or navigate when Cancel is clicked" time="0.3426">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/context/search-provider.test.tsx" timestamp="2026-10-13T17:41:25.396Z" hostname="elitebook" tests="9" failures="0" errors="0" skipped="0" time="3.4947">
+        <testcase classname="src/context/search-provider.test.tsx" name="SearchProvider and CommandMenu &gt; renders the command palette when the palette is open" time="0.4071">
+        </testcase>
+        <testcase classname="src/context/search-provider.test.tsx" name="SearchProvider and CommandMenu &gt; does not show the dialog content when search is closed" time="0.0295">
+        </testcase>
+        <testcase classname="src/context/search-provider.test.tsx" name="SearchProvider and CommandMenu &gt; opens the command menu when Ctrl + K is pressed" time="0.1952">
+        </testcase>
+        <testcase classname="src/context/search-provider.test.tsx" name="SearchProvider and CommandMenu &gt; opens the command menu when Cmd + K is pressed" time="0.2243">
+        </testcase>
+        <testcase classname="src/context/search-provider.test.tsx" name="SearchProvider and CommandMenu &gt; navigates to a top-level route and closes the palette when a nav item is selected" time="0.6983">
+        </testcase>
+        <testcase classname="src/context/search-provider.test.tsx" name="SearchProvider and CommandMenu &gt; navigates to an administration item" time="0.6177">
+        </testcase>
+        <testcase classname="src/context/search-provider.test.tsx" name="SearchProvider and CommandMenu &gt; hides administrator-only commands from a stock employee" time="0.157">
+        </testcase>
+        <testcase classname="src/context/search-provider.test.tsx" name="SearchProvider and CommandMenu &gt; applies theme and closes the palette when a theme command is chosen" time="0.8136">
+        </testcase>
+        <testcase classname="src/context/search-provider.test.tsx" name="SearchProvider and CommandMenu &gt; shows empty state when the filter matches nothing" time="0.3466">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/hooks/use-table-url-state.test.ts" timestamp="2026-10-13T17:41:25.401Z" hostname="elitebook" tests="17" failures="0" errors="0" skipped="0" time="0.1387">
+        <testcase classname="src/hooks/use-table-url-state.test.ts" name="useTableUrlState &gt; derives pagination from search with defaults" time="0.0183">
+        </testcase>
+        <testcase classname="src/hooks/use-table-url-state.test.ts" name="useTableUrlState &gt; uses default page and pageSize when search omits them" time="0.013">
+        </testcase>
+        <testcase classname="src/hooks/use-table-url-state.test.ts" name="useTableUrlState &gt; clamps negative effective page via pageIndex" time="0.0057">
+        </testcase>
+        <testcase classname="src/hooks/use-table-url-state.test.ts" name="useTableUrlState &gt; onPaginationChange omits page and pageSize from search when they match defaults" time="0.0172">
+        </testcase>
+        <testcase classname="src/hooks/use-table-url-state.test.ts" name="useTableUrlState &gt; onPaginationChange writes non-default page and pageSize" time="0.0188">
+        </testcase>
+        <testcase classname="src/hooks/use-table-url-state.test.ts" name="useTableUrlState &gt; supports custom pagination search keys" time="0.0046">
+        </testcase>
+        <testcase classname="src/hooks/use-table-url-state.test.ts" name="useTableUrlState &gt; reads globalFilter from search and onGlobalFilterChange updates URL and clears page" time="0.0067">
+        </testcase>
+        <testcase classname="src/hooks/use-table-url-state.test.ts" name="useTableUrlState &gt; clears filter key in URL when global filter becomes empty after trim" time="0.005">
+        </testcase>
+        <testcase classname="src/hooks/use-table-url-state.test.ts" name="useTableUrlState &gt; does not trim global filter when trim is false" time="0.0045">
+        </testcase>
+        <testcase classname="src/hooks/use-table-url-state.test.ts" name="useTableUrlState &gt; omits globalFilter and onGlobalFilterChange when global filter is disabled" time="0.0049">
+        </testcase>
+        <testcase classname="src/hooks/use-table-url-state.test.ts" name="useTableUrlState &gt; builds array column filters from search" time="0.0072">
+        </testcase>
+        <testcase classname="src/hooks/use-table-url-state.test.ts" name="useTableUrlState &gt; builds string column filters from search" time="0.0055">
+        </testcase>
+        <testcase classname="src/hooks/use-table-url-state.test.ts" name="useTableUrlState &gt; onColumnFiltersChange merges serialized filters into search and clears page" time="0.0055">
+        </testcase>
+        <testcase classname="src/hooks/use-table-url-state.test.ts" name="useTableUrlState &gt; ensurePageInRange navigates with replace when current page exceeds pageCount" time="0.004">
+        </testcase>
+        <testcase classname="src/hooks/use-table-url-state.test.ts" name="useTableUrlState &gt; ensurePageInRange resets to last page when resetTo is last" time="0.0048">
+        </testcase>
+        <testcase classname="src/hooks/use-table-url-state.test.ts" name="useTableUrlState &gt; ensurePageInRange does not navigate when page is in range" time="0.0044">
+        </testcase>
+        <testcase classname="src/hooks/use-table-url-state.test.ts" name="useTableUrlState &gt; uses custom serialize and deserialize for column filters" time="0.0066">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/lib/access-control.test.ts" timestamp="2026-10-13T17:41:25.408Z" hostname="elitebook" tests="4" failures="0" errors="0" skipped="0" time="0.0051">
+        <testcase classname="src/lib/access-control.test.ts" name="role access control &gt; gives the administrator full access" time="0.0017">
+        </testcase>
+        <testcase classname="src/lib/access-control.test.ts" name="role access control &gt; limits a stock employee to stock operations and read-only products" time="0.0015">
+        </testcase>
+        <testcase classname="src/lib/access-control.test.ts" name="role access control &gt; keeps governance pages administrator-only for legacy managers" time="0.0007">
+        </testcase>
+        <testcase classname="src/lib/access-control.test.ts" name="role access control &gt; recognizes authentication routes during logout navigation" time="0.0005">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/lib/cookies.test.ts" timestamp="2026-10-13T17:41:25.410Z" hostname="elitebook" tests="2" failures="0" errors="0" skipped="0" time="0.0061">
+        <testcase classname="src/lib/cookies.test.ts" name="cookies &gt; stores a value that can be read back" time="0.0021">
+        </testcase>
+        <testcase classname="src/lib/cookies.test.ts" name="cookies &gt; clears a value so it is no longer readable" time="0.0034">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/lib/handle-server-error.test.ts" timestamp="2026-10-13T17:41:25.411Z" hostname="elitebook" tests="7" failures="0" errors="0" skipped="0" time="0.0186">
+        <testcase classname="src/lib/handle-server-error.test.ts" name="handleServerError &gt; shows a generic message when the error is not recognised" time="0.0075">
+            <system-out>
+[Error: network]
+            </system-out>
+        </testcase>
+        <testcase classname="src/lib/handle-server-error.test.ts" name="handleServerError &gt; maps a plain object with status 204 to the no-content message" time="0.0016">
+            <system-out>
+{
+  &quot;status&quot;: 204,
+}
+            </system-out>
+        </testcase>
+        <testcase classname="src/lib/handle-server-error.test.ts" name="handleServerError &gt; prefers the API title when the error is an Axios error with response data" time="0.0013">
+            <system-out>
+[AxiosError: Bad request]
+            </system-out>
+        </testcase>
+        <testcase classname="src/lib/handle-server-error.test.ts" name="handleServerError &gt; falls back to the generic message when Axios response has no data.title" time="0.0015">
+            <system-out>
+[AxiosError: Request failed]
+            </system-out>
+        </testcase>
+        <testcase classname="src/lib/handle-server-error.test.ts" name="handleServerError &gt; falls back to the generic message when Axios data.title is an empty string" time="0.0017">
+            <system-out>
+[AxiosError: Bad request]
+            </system-out>
+        </testcase>
+        <testcase classname="src/lib/handle-server-error.test.ts" name="handleServerError &gt; logs the error to the console in development" time="0.003">
+        </testcase>
+        <testcase classname="src/lib/handle-server-error.test.ts" name="handleServerError &gt; does not log the error to the console in production" time="0.0008">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/lib/utils.test.ts" timestamp="2026-10-13T17:41:25.416Z" hostname="elitebook" tests="5" failures="0" errors="0" skipped="0" time="0.0052">
+        <testcase classname="src/lib/utils.test.ts" name="getPageNumbers &gt; returns all pages when total is at most 5" time="0.0014">
+        </testcase>
+        <testcase classname="src/lib/utils.test.ts" name="getPageNumbers &gt; shows ellipsis near the beginning" time="0.0006">
+        </testcase>
+        <testcase classname="src/lib/utils.test.ts" name="getPageNumbers &gt; shows ellipsis near the end" time="0.0004">
+        </testcase>
+        <testcase classname="src/lib/utils.test.ts" name="getPageNumbers &gt; shows ellipsis on both side in the middle" time="0.0014">
+        </testcase>
+        <testcase classname="src/lib/utils.test.ts" name="getPageNumbers &gt; handles current page greater than total pages" time="0.0008">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/stores/auth-store.test.ts" timestamp="2026-10-13T17:41:25.419Z" hostname="elitebook" tests="5" failures="0" errors="0" skipped="0" time="0.1196">
+        <testcase classname="src/stores/auth-store.test.ts" name="useAuthStore &gt; starts with an empty access token when nothing is persisted" time="0.1089">
+        </testcase>
+        <testcase classname="src/stores/auth-store.test.ts" name="useAuthStore &gt; persists access token so a new store instance reads it back" time="0.0024">
+        </testcase>
+        <testcase classname="src/stores/auth-store.test.ts" name="useAuthStore &gt; clears persisted access token when resetAccessToken is used" time="0.0027">
+        </testcase>
+        <testcase classname="src/stores/auth-store.test.ts" name="useAuthStore &gt; updates the signed-in user via setUser" time="0.0023">
+        </testcase>
+        <testcase classname="src/stores/auth-store.test.ts" name="useAuthStore &gt; reset clears user and access token and drops persistence" time="0.0022">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/features/profile/profile-page.test.tsx" timestamp="2026-10-13T17:41:25.422Z" hostname="elitebook" tests="1" failures="0" errors="0" skipped="0" time="0.0814">
+        <testcase classname="src/features/profile/profile-page.test.tsx" name="ProfilePage &gt; shows the authenticated user profile and account forms" time="0.0805">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/features/maarif/dashboard-tables.test.tsx" timestamp="2026-10-13T17:41:25.423Z" hostname="elitebook" tests="1" failures="0" errors="0" skipped="0" time="0.198">
+        <testcase classname="src/features/maarif/dashboard-tables.test.tsx" name="Dashboard content &gt; keeps indicators and charts without product tables" time="0.1966">
+            <system-err>
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+The width(-1) and height(-1) of chart should be greater than 0,
+       please check the style of container, or the props width(100%) and height(100%),
+       or add a minWidth(0) or minHeight(undefined) or use aspect(undefined) to control the
+       height and width.
+            </system-err>
+        </testcase>
+    </testsuite>
+    <testsuite name="src/features/maarif/product-create-dialog.test.tsx" timestamp="2026-10-13T17:41:25.424Z" hostname="elitebook" tests="4" failures="0" errors="0" skipped="0" time="7.3875">
+        <testcase classname="src/features/maarif/product-create-dialog.test.tsx" name="ProductCreateDialog &gt; uses the creation form to edit a prefilled product" time="1.8728">
+        </testcase>
+        <testcase classname="src/features/maarif/product-create-dialog.test.tsx" name="ProductCreateDialog &gt; shows required-field errors and rejects an existing SKU" time="1.6445">
+        </testcase>
+        <testcase classname="src/features/maarif/product-create-dialog.test.tsx" name="ProductCreateDialog &gt; protects a dirty form when closing" time="1.6717">
+        </testcase>
+        <testcase classname="src/features/maarif/product-create-dialog.test.tsx" name="ProductCreateDialog &gt; keeps the form open and displays a backend error" time="2.1836">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/features/maarif/product-details.test.tsx" timestamp="2026-10-13T17:41:25.426Z" hostname="elitebook" tests="1" failures="0" errors="0" skipped="0" time="1.4481">
+        <testcase classname="src/features/maarif/product-details.test.tsx" name="ProductDetails &gt; presents the product with shadcn actions and disables it after confirmation" time="1.4376">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/features/maarif/products-catalog.test.tsx" timestamp="2026-10-13T17:41:25.427Z" hostname="elitebook" tests="6" failures="0" errors="0" skipped="0" time="9.8481">
+        <testcase classname="src/features/maarif/products-catalog.test.tsx" name="ProductCatalog &gt; shows the floating toolbar for selected products and clears it" time="2.5606">
+        </testcase>
+        <testcase classname="src/features/maarif/products-catalog.test.tsx" name="ProductCatalog &gt; confirms bulk deactivation and resets the selection" time="2.4571">
+        </testcase>
+        <testcase classname="src/features/maarif/products-catalog.test.tsx" name="ProductCatalog &gt; does not offer bulk deactivation to stock employees" time="0.8475">
+        </testcase>
+        <testcase classname="src/features/maarif/products-catalog.test.tsx" name="ProductCatalog &gt; searches by author and resets to all products" time="1.5911">
+        </testcase>
+        <testcase classname="src/features/maarif/products-catalog.test.tsx" name="ProductCatalog &gt; exposes view, edit and create callbacks with the existing data" time="1.4989">
+        </testcase>
+        <testcase classname="src/features/maarif/products-catalog.test.tsx" name="ProductCatalog &gt; keeps stock employees read-only" time="0.8871">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/features/maarif/records-table.test.tsx" timestamp="2026-10-13T17:41:25.429Z" hostname="elitebook" tests="6" failures="0" errors="0" skipped="0" time="8.2916">
+        <testcase classname="src/features/maarif/records-table.test.tsx" name="RecordsTable &gt; counts selections across pages, exports filtered selections and clears them" time="3.3091">
+        </testcase>
+        <testcase classname="src/features/maarif/records-table.test.tsx" name="RecordsTable &gt; confirms only eligible selected rows and allows cancellation" time="2.1806">
+        </testcase>
+        <testcase classname="src/features/maarif/records-table.test.tsx" name="RecordsTable &gt; searches, resets and paginates local records" time="1.3357">
+        </testcase>
+        <testcase classname="src/features/maarif/records-table.test.tsx" name="RecordsTable &gt; keeps row actions and selection connected to the original record" time="1.3865">
+        </testcase>
+        <testcase classname="src/features/maarif/records-table.test.tsx" name="RecordsTable &gt; renders read-only details with an unchanged total" time="0.0701">
+        </testcase>
+        <testcase classname="src/features/maarif/records-table.test.tsx" name="frenchDateOrder &gt; sorts Casablanca fixture dates by year, month, day and time" time="0.005">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/features/maarif/user-management.test.tsx" timestamp="2026-10-13T17:41:25.432Z" hostname="elitebook" tests="3" failures="0" errors="0" skipped="0" time="5.3113">
+        <testcase classname="src/features/maarif/user-management.test.tsx" name="does not load accounts for a non-administrator" time="0.0605">
+        </testcase>
+        <testcase classname="src/features/maarif/user-management.test.tsx" name="shows backend errors without closing the creation form" time="1.8862">
+        </testcase>
+        <testcase classname="src/features/maarif/user-management.test.tsx" name="uses the catalogue toolbar, multi-select filters and column controls" time="3.3596">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/features/users/components/users-action-dialog.test.tsx" timestamp="2026-10-13T17:41:25.433Z" hostname="elitebook" tests="9" failures="0" errors="0" skipped="0" time="7.9447">
+        <testcase classname="src/features/users/components/users-action-dialog.test.tsx" name="UsersActionDialog &gt; add user &gt; renders title and description" time="0.3516">
+        </testcase>
+        <testcase classname="src/features/users/components/users-action-dialog.test.tsx" name="UsersActionDialog &gt; add user &gt; shows validation messages when the form is submitted with empty fields" time="0.7645">
+        </testcase>
+        <testcase classname="src/features/users/components/users-action-dialog.test.tsx" name="UsersActionDialog &gt; add user &gt; keeps confirm password disabled until password field is touched" time="0.4373">
+        </testcase>
+        <testcase classname="src/features/users/components/users-action-dialog.test.tsx" name="UsersActionDialog &gt; add user &gt; shows password validation messages when password is invalid" time="1.6547">
+        </testcase>
+        <testcase classname="src/features/users/components/users-action-dialog.test.tsx" name="UsersActionDialog &gt; add user &gt; shows the submitted data when the form is submitted successfully" time="2.375">
+        </testcase>
+        <testcase classname="src/features/users/components/users-action-dialog.test.tsx" name="UsersActionDialog &gt; edit user &gt; renders title and description" time="0.138">
+        </testcase>
+        <testcase classname="src/features/users/components/users-action-dialog.test.tsx" name="UsersActionDialog &gt; edit user &gt; submits without password changes" time="0.7947">
+        </testcase>
+        <testcase classname="src/features/users/components/users-action-dialog.test.tsx" name="UsersActionDialog &gt; edit user &gt; requires confirm password when password is changed" time="0.5028">
+        </testcase>
+        <testcase classname="src/features/users/components/users-action-dialog.test.tsx" name="UsersActionDialog &gt; edit user &gt; shows the submitted data when the form is submitted successfully" time="0.9189">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/features/users/components/users-delete-dialog.test.tsx" timestamp="2026-10-13T17:41:25.437Z" hostname="elitebook" tests="6" failures="0" errors="0" skipped="0" time="2.8889">
+        <testcase classname="src/features/users/components/users-delete-dialog.test.tsx" name="UsersDeleteDialog &gt; renders the dialog with the correct title, description, input and buttons" time="0.1168">
+        </testcase>
+        <testcase classname="src/features/users/components/users-delete-dialog.test.tsx" name="UsersDeleteDialog &gt; keeps the delete button disabled until the username input is filled correctly" time="0.5081">
+        </testcase>
+        <testcase classname="src/features/users/components/users-delete-dialog.test.tsx" name="UsersDeleteDialog &gt; closes the dialog when the cancel button is clicked" time="0.4071">
+        </testcase>
+        <testcase classname="src/features/users/components/users-delete-dialog.test.tsx" name="UsersDeleteDialog &gt; resets the username input when the dialog is closed and reopened" time="0.8866">
+        </testcase>
+        <testcase classname="src/features/users/components/users-delete-dialog.test.tsx" name="UsersDeleteDialog &gt; shows the submitted data when deleted successfully" time="0.5675">
+        </testcase>
+        <testcase classname="src/features/users/components/users-delete-dialog.test.tsx" name="UsersDeleteDialog &gt; deletes successfully when press Enter key on the username input" time="0.3983">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/features/users/components/users-invite-dialog.test.tsx" timestamp="2026-10-13T17:41:25.439Z" hostname="elitebook" tests="6" failures="0" errors="0" skipped="0" time="5.9864">
+        <testcase classname="src/features/users/components/users-invite-dialog.test.tsx" name="UsersInviteDialog &gt; renders the dialog title and description" time="0.2591">
+        </testcase>
+        <testcase classname="src/features/users/components/users-invite-dialog.test.tsx" name="UsersInviteDialog &gt; closes when the dialog close button is clicked" time="0.592">
+        </testcase>
+        <testcase classname="src/features/users/components/users-invite-dialog.test.tsx" name="UsersInviteDialog &gt; closes when Cancel is clicked" time="0.5859">
+        </testcase>
+        <testcase classname="src/features/users/components/users-invite-dialog.test.tsx" name="UsersInviteDialog &gt; shows error messages when submitting empty form, and clears them as fields are filled" time="1.1569">
+        </testcase>
+        <testcase classname="src/features/users/components/users-invite-dialog.test.tsx" name="UsersInviteDialog &gt; resets entered values when the dialog is closed and reopened" time="1.9879">
+        </testcase>
+        <testcase classname="src/features/users/components/users-invite-dialog.test.tsx" name="UsersInviteDialog &gt; shows submitted data when the form is submitted successfully" time="1.3999">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/features/users/components/users-multi-delete-dialog.test.tsx" timestamp="2026-10-13T17:41:25.441Z" hostname="elitebook" tests="6" failures="0" errors="0" skipped="0" time="14.9305">
+        <testcase classname="src/features/users/components/users-multi-delete-dialog.test.tsx" name="UsersMultiDeleteDialog &gt; renders the dialog with the correct title, description, input and buttons" time="0.1468">
+        </testcase>
+        <testcase classname="src/features/users/components/users-multi-delete-dialog.test.tsx" name="UsersMultiDeleteDialog &gt; keeps the delete button disabled until the confirm delete input is filled correctly" time="0.3662">
+        </testcase>
+        <testcase classname="src/features/users/components/users-multi-delete-dialog.test.tsx" name="UsersMultiDeleteDialog &gt; closes the dialog when the cancel button is clicked" time="0.3489">
+        </testcase>
+        <testcase classname="src/features/users/components/users-multi-delete-dialog.test.tsx" name="UsersMultiDeleteDialog &gt; resets the confirm delete input when the dialog is closed and reopened" time="1.0169">
+        </testcase>
+        <testcase classname="src/features/users/components/users-multi-delete-dialog.test.tsx" name="UsersMultiDeleteDialog &gt; shows the submitted data when deleted successfully" time="12.3">
+        </testcase>
+        <testcase classname="src/features/users/components/users-multi-delete-dialog.test.tsx" name="UsersMultiDeleteDialog &gt; deletes successfully when press Enter key on the confirm delete input" time="0.7487">
+        </testcase>
+    </testsuite>
+    <testsuite name="src/features/auth/sign-in/components/user-auth-form.test.tsx" timestamp="2026-10-13T17:41:25.444Z" hostname="elitebook" tests="4" failures="0" errors="0" skipped="0" time="14.1845">
+        <testcase classname="src/features/auth/sign-in/components/user-auth-form.test.tsx" name="UserAuthForm &gt; Rendering without redirectTo &gt; renders fields, submit button, and forgot password link" time="0.0972">
+        </testcase>
+        <testcase classname="src/features/auth/sign-in/components/user-auth-form.test.tsx" name="UserAuthForm &gt; Rendering without redirectTo &gt; shows validation messages when submitting empty form" time="0.4918">
+        </testcase>
+        <testcase classname="src/features/auth/sign-in/components/user-auth-form.test.tsx" name="UserAuthForm &gt; Rendering without redirectTo &gt; authenticates and navigates to default route on success" time="12.5987">
+        </testcase>
+        <testcase classname="src/features/auth/sign-in/components/user-auth-form.test.tsx" name="UserAuthForm &gt; navigates to redirectTo when provided" time="0.9929">
+        </testcase>
+    </testsuite>
+</testsuites>
